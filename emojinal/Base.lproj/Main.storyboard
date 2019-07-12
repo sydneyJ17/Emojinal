@@ -18,50 +18,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EN-Xu-Ch8">
-                                <rect key="frame" x="43" y="415" width="100" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EN-Xu-Ch8">
+                                <rect key="frame" x="40" y="415" width="100" height="123"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="93"/>
                                 <state key="normal" title="🎡"/>
                                 <connections>
                                     <action selector="attractionsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nus-gm-MzN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qky-lz-agh">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qky-lz-agh">
                                 <rect key="frame" x="293" y="419" width="92" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
                                 <state key="normal" title="🏈"/>
                                 <connections>
                                     <action selector="sportsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTE-U6-fa6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tme-iH-EbF">
-                                <rect key="frame" x="157" y="554" width="101" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tme-iH-EbF">
+                                <rect key="frame" x="160" y="554" width="94" height="125"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="94"/>
                                 <state key="normal" title="☕️"/>
                                 <connections>
                                     <action selector="coffeeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0G0-Km-Bj1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKw-v3-AfN">
-                                <rect key="frame" x="155" y="271" width="105" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKw-v3-AfN">
+                                <rect key="frame" x="150" y="271" width="114" height="128"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="97"/>
                                 <state key="normal" title="🍽"/>
                                 <connections>
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phj-Jb-39O"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chicago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfV-dB-5l2">
-                                <rect key="frame" x="64" y="116" width="286" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfV-dB-5l2">
+                                <rect key="frame" x="60" y="119" width="294" height="101"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="93"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.68423275420147855" green="0.76776077575757928" blue="0.88513880968093872" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tme-iH-EbF" secondAttribute="trailing" constant="160" id="2Gw-c7-Fjd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lfV-dB-5l2" secondAttribute="trailing" constant="60" id="722-ye-RyP"/>
+                            <constraint firstItem="9EN-Xu-Ch8" firstAttribute="top" secondItem="lfV-dB-5l2" secondAttribute="bottom" constant="200" id="CyR-5Y-e3Y"/>
+                            <constraint firstItem="Tme-iH-EbF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="D6B-QW-yUY"/>
+                            <constraint firstItem="lfV-dB-5l2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="DSC-Xx-sFK"/>
+                            <constraint firstItem="UKw-v3-AfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="HvL-Zp-YF2"/>
+                            <constraint firstItem="9EN-Xu-Ch8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="K6n-eT-55p"/>
+                            <constraint firstItem="UKw-v3-AfN" firstAttribute="top" secondItem="lfV-dB-5l2" secondAttribute="bottom" constant="50" id="Uu8-gM-y3k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qky-lz-agh" secondAttribute="trailing" constant="40" id="gyb-SE-f31"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UKw-v3-AfN" secondAttribute="trailing" constant="150" id="si3-vc-1UH"/>
+                            <constraint firstItem="qky-lz-agh" firstAttribute="leading" secondItem="9EN-Xu-Ch8" secondAttribute="trailing" constant="150" id="vpA-wE-ekQ"/>
+                            <constraint firstItem="qky-lz-agh" firstAttribute="top" secondItem="lfV-dB-5l2" secondAttribute="bottom" constant="200" id="w4g-PD-c6K"/>
+                            <constraint firstItem="Tme-iH-EbF" firstAttribute="top" secondItem="UKw-v3-AfN" secondAttribute="bottom" constant="160" id="yqd-DH-gQp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -70,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-329" y="-145"/>
+            <point key="canvasLocation" x="-878" y="-202"/>
         </scene>
     </scenes>
     <color key="tintColor" white="0.81019978059999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
