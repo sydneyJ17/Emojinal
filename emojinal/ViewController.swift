@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
   
-    let emojis = ["🍽" : "Food" , "🎡" : "Attractions"]
+    let emojis = ["🍽" : "Food" , "🎡" : "Attractions" , "🏈" : "Sports"]
 
     
 //BUTTONS
@@ -21,7 +21,8 @@ class ViewController: UIViewController {
 //DICTIONARY- MESSAGES FOR EACH BUTTON
     var customMessages = [
         "Food" : [ "Giordanos" , "Eataly" , "Purple Pig" , "Harry Caray's"] ,
-        "Attractions" : ["Riverwalk" , "The Bean" , "Navy Pier" , "Willis Tower"]
+        "Attractions" : ["Riverwalk" , "The Bean" , "Navy Pier" , "Willis Tower"] ,
+        "Sports" : ["Bears" , "Blackhawks" , "Cubs" , "White Sox"]
     ]
     
 //RANDOM MESSAGE CHOOSER
@@ -68,7 +69,21 @@ class ViewController: UIViewController {
     
     }
     
-    
+    //ACTIONS FOR SPORTS BUTTON
+    @IBAction func sportsButton(_ sender: UIButton) {
+        let selectedEmotion = sender.titleLabel?.text
+        
+        let random: UInt32 = arc4random_uniform(4)
+        
+        let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[Int(random)]
+        
+        
+        let alertController = UIAlertController(title: emojis[selectedEmotion!], message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
 
     
     
