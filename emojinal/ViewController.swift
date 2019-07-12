@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
   
-    let emojis = ["🍽" : "Food" , "🎡" : "Attractions" , "🏈" : "Sports"]
+    let emojis = ["🍽" : "Food" , "🎡" : "Attractions" , "🏈" : "Sports" , "☕️" : "Coffee"]
 
     
 //BUTTONS
@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     var customMessages = [
         "Food" : [ "Giordanos" , "Eataly" , "Purple Pig" , "Harry Caray's"] ,
         "Attractions" : ["Riverwalk" , "The Bean" , "Navy Pier" , "Willis Tower"] ,
-        "Sports" : ["Bears" , "Blackhawks" , "Cubs" , "White Sox"]
+        "Sports" : ["Bears" , "Blackhawks" , "Cubs" , "White Sox"] ,
+        "Coffee" : ["Starbucks" , "Dunkin" , "Caffe Umbria" , "Fairgrounds Coffee & Tea"]
     ]
     
 //RANDOM MESSAGE CHOOSER
@@ -85,6 +86,22 @@ class ViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 
+    
+    //ACTIONS FOR COFFEE BUTTON
+    @IBAction func coffeeButton(_ sender: UIButton){
+        let selectedEmotion = sender.titleLabel?.text
+        
+        let random: UInt32 = arc4random_uniform(4)
+        
+        let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[Int(random)]
+        
+        
+        let alertController = UIAlertController(title: emojis[selectedEmotion!], message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
     
     
         
